@@ -14,10 +14,8 @@
 
 <body>
 
-    <!-- Train Scheduler -->
     <div class="container">
 
-        <!-- Jumbotron -->
         <div class="jumbotron" style="background-color: purple; color: white">
             <h1 class="text-center">Whistle Stop Train Management</h1>
             <h3 class="text-center">On Rails On Demand</h3>
@@ -27,7 +25,6 @@
 
             <div class="col-md-12">
 
-                <!-- Current Train Schedule-->
                 <div class="card mb-4">
                     <div class="card-header">Current Train Schedule</div>
                     <div class="card-body">
@@ -51,27 +48,26 @@
 
         <div class="row">
             <div class="col-md-12">
-                <!-- Add Train  -->
+
                 <div class="card mb-4">
                     <div class="card-header">Add Train</div>
                     <div class="card-body">
 
-                        <!-- Entry Form -->
                         <form>
                             <div class="form-group">
-                                <label for="train-name-input">Employee Name</label>
+                                <label for="train-name-input">Train Name</label>
                                 <input class="form-control" id="train-name-input" placeholder="CTA" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="destination-input">Role</label>
+                                <label for="destination-input">Destination</label>
                                 <input class="form-control" id="destination-input" placeholder="Yuma" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="firstTime-input">Start Date (HH:mm - military time)</label>
+                                <label for="firstTime-input">First Time (HH:mm - military time)</label>
                                 <input class="form-control" id="firstTime-input" placeholder="3:10" type="text">
                             </div>
                             <div class="form-group">
-                                <label for="frequency-input">Monthly Rate</label>
+                                <label for="frequency-input">Frequency (min)</label>
                                 <input class="form-control" id="frequency-input" placeholder="5" type="text">
                             </div>
                             <button class="btn btn-primary float-right" id="add-train-btn">Submit</button>
@@ -83,12 +79,12 @@
         </div>
 
     </div>
-
-    <script rel="javascript" type="text/javascript" src="assets/javascript/app.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
     <!-- The core Firebase JS SDK is always required and must be listed first -->
     <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-database.js"></script>
+    <script rel="javascript" type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 
 </html>
